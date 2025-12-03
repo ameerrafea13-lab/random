@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roblox Doors Tools & Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+		<style>
+		/* --- Begin Doors Wiki style header --- */
+		:root {
+			--primary: #4f8cff;
+			--accent: #7ee8fa;    
+			--bg: #f8fafc;
+			--container-bg: #fff;
+			--text: #222;
+			--desc: #4f8cff;
+			--table-header: #e0f7fa;
+			--table-border: #b6e0fe;
+			--table-row-hover: #f1f8ff;
+			--shadow: 0 4px 24px rgba(79,140,255,0.13);
+		}
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			background: linear-gradient(135deg, var(--bg) 0%, #b6e0fe 100%);
+			color: var(--text);
+			font-family: 'Roboto', Arial, sans-serif;
+		}
+		body {
+			min-height: 100vh;
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+		}
+		.container {
+			max-width: 900px;
+			width: 97%;
+			margin: 40px auto;
+			padding: 32px 28px;
+			background: var(--container-bg);
+			border-radius: 14px;
+			box-shadow: var(--shadow);
+			animation: fadeIn 1s;
+		}
+		@keyframes fadeIn {
+			from { opacity: 0; transform: translateY(30px);}
+			to { opacity: 1; transform: translateY(0);}
+		}
+		h1 {
+			color: var(--primary);
+			letter-spacing: 1px;
+			margin-bottom: 18px;
+			text-shadow: 0 2px 8px #4f8cff44;
+			font-size: 2.2em;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+		.desc {
+			color: #444;
+			font-size: 1.08em;
+			margin-bottom: 12px;
+			line-height: 1.7;
+		}
+		/* --- Items style like Doors Wiki entities --- */
+		.items-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 28px;
+			margin-top: 32px;
+			margin-bottom: 18px;
+			justify-content: flex-start;
+		}
+		.item-card {
+			background: linear-gradient(120deg, #e0f7fa 0%, #f1f8ff 100%);
+			border-radius: 12px;
+			box-shadow: 0 2px 12px rgba(79,140,255,0.10);
+			padding: 24px 22px 18px 22px;
+			min-width: 220px;
+			flex: 1 1 240px;
+			max-width: 270px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			position: relative;
+			transition: transform 0.2s, box-shadow 0.2s;
+		}
+		.item-card:hover {
+			transform: translateY(-4px) scale(1.01);
+			box-shadow: 0 6px 24px rgba(79,140,255,0.18);
+		}
+		.item-title {
+			font-size: 1.25em;
+			color: #4f8cff;
+			font-weight: bold;
+			margin-bottom: 8px;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+		.item-icon {
+			font-size: 1.3em;
+			color: #7ee8fa;
+			min-width: 1.5em;
+			text-align: center;
+		}
+		.item-desc {
+			color: #222;
+			font-size: 1.05em;
+			margin-bottom: 0;
+			line-height: 1.6;
+		}
+		@media (max-width: 900px) {
+			.items-list {
+				gap: 16px;
+			}
+			.item-card {
+				min-width: 160px;
+				max-width: 100%;
+				padding: 16px 10px 12px 14px;
+			}
+		}
+		@media (max-width: 700px) {
+			.container {
+				padding: 14px 4vw;
+			}
+			h1 {
+				font-size: 1.3em;
+			}
+			.items-list {
+				flex-direction: column;
+				gap: 12px;
+			}
+			.item-card {
+				min-width: 0;
+				width: 100%;
+			}
+		}
+		/* Subtle glowing border effect */
+		.container {
+			border: 2px solid transparent;
+			box-shadow: 0 0 0 0 var(--primary), var(--shadow);
+			transition: box-shadow 0.3s, border-color 0.3s;
+		}
+		.container:hover {
+			border-color: var(--primary);
+			box-shadow: 0 0 16px 2px var(--primary), var(--shadow);
+		}
+    :root {
+        --primary: #4f8cff;
+        --accent: #7ee8fa;
+        --bg: #f8fafc;
+        --container-bg: #fff;
+        --text: #222;
+        --desc: #4f8cff;
+        --table-header: #e0f7fa;
+        --table-border: #b6e0fe;
+        --table-row-hover: #f1f8ff;
+        --shadow: 0 4px 24px rgba(79,140,255,0.13);
+    }
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, var(--bg) 0%, #b6e0fe 100%);
+        color: var(--text);
+        font-family: 'Roboto', Arial, sans-serif;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      .container {
+        max-width: 900px;
+        width: 97%;
+        margin: 40px auto;
+        padding: 32px 28px;
+        background: var(--container-bg);
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+        animation: fadeIn 1s;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(30px);}
+        to { opacity: 1; transform: translateY(0);}
+      }
+      h1 {
+        color: var(--primary);
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+        text-shadow: 0 2px 8px #4f8cff44;
+        font-size: 2.2em;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .desc {
+        color: #444;
+        font-size: 1.08em;
+        margin-bottom: 12px;
+        line-height: 1.7;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 24px;
+        background: transparent;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px #4f8cff11;
+      }
+      th, td {
+        padding: 14px 12px;
+        border-bottom: 1px solid var(--table-border);
+        text-align: left;
+        transition: background 0.2s;
+        font-size: 1.05em;
+      }
+      th {
+        background: var(--table-header);
+        color: var(--primary);
+        font-size: 1.13em;
+        letter-spacing: 0.5px;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      tbody tr:hover {
+        background: var(--table-row-hover);
+      }
+      @media (max-width: 700px) {
+        .container {
+          padding: 14px 4vw;
+        }
+        h1 {
+          font-size: 1.3em;
+        }
+        table, th, td {
+          font-size: 0.98em;
+        }
+      }
+      /* Subtle glowing border effect */
+      .container {
+        border: 2px solid transparent;
+        box-shadow: 0 0 0 0 var(--primary), var(--shadow);
+        transition: box-shadow 0.3s, border-color 0.3s;
+      }
+      .container:hover {
+        border-color: var(--primary);
+        box-shadow: 0 0 16px 2px var(--primary), var(--shadow);
+      }
+      /* Tooltip style for table items */
+      td[title] {
+        position: relative;
+        cursor: help;
+      }
+      td[title]:hover::after {
+        content: attr(title);
+        position: absolute;
+        left: 0;
+        top: 110%;
+        background: #e0f7fa;
+        color: #4f8cff;
+        padding: 6px 12px;
+        border-radius: 6px;
+        white-space: pre-line;
+        font-size: 0.97em;
+        box-shadow: 0 2px 8px #4f8cff22;
+        z-index: 10;
+        border-left: 4px solid #4f8cff;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Roblox Doors: Tools & Info</h1>
+        <p class="desc">
+            <strong>Roblox Doors</strong> is a popular horror game on Roblox where players explore a hotel full of monsters and puzzles. Here are some of the main tools/items you can find and use in the game:
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tool/Item</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Flashlight</td>
+                    <td>Lights up dark rooms. Requires batteries to recharge.</td>
+                </tr>
+                <tr>
+                    <td>Lighter</td>
+                    <td>Provides a small amount of light. Has limited fuel.</td>
+                </tr>
+                <tr>
+                    <td>Lockpick</td>
+                    <td>Opens locked doors and drawers without a key.</td>
+                </tr>
+                <tr>
+                    <td>Vitamins</td>
+                    <td>Temporarily increases your speed. Useful for escaping monsters.</td>
+                </tr>
+                <tr>
+                    <td>Crucifix</td>
+                    <td>Can be used to repel certain entities (like Rush or Ambush) once per use.</td>
+                </tr>
+                <tr>
+                    <td>Key</td>
+                    <td>Opens locked doors. Usually found in drawers or on tables.</td>
+                </tr>
+                <tr>
+                    <td>Candle</td>
+                    <td>Detects entity presence by flickering and provides light.</td>
+                </tr>
+                <tr>
+                    <td>Skeleton Key</td>
+                    <td>Opens special doors, such as the one to the Herb of Viridis.</td>
+                </tr>
+                <tr>
+                    <td>Herb of Viridis</td>
+                    <td>Heals the player over time when held.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="desc" style="margin-top:20px;">
+            <strong>Tip:</strong> Always check drawers and rooms for useful items, and listen for audio cues to avoid monsters!
+        </p>
+    </div>
+</body>
+</html>

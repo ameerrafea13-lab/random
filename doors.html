@@ -1,0 +1,604 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="test2.css">
+  </head>
+  <body>
+    <div class="div1" >seek</div>
+    <fieldset>
+      <h1>this is seek</h1>
+      <h3>quiz</h3>
+      <p>witch doors numbers from those seek shows up in</p>
+      <select>
+        <option>20-30</option>
+        <option>30-40</option>
+        <option>40-50</option>
+      </select>
+    </fieldset>  
+    <p>
+      if u dont know how to be 
+      <br>
+      fast in seek drink vitamins
+    </p>
+    <div class="SeekInfo">
+      <a href="https://doors-game.fandom.com/wiki/Seek">seek info</a>
+    </div>
+    <div class="div2" >figure</div>
+    <fieldset>
+      <h1>this is figure</h1>
+      <h3>quiz</h3>
+      <p>witch doors numbers from those figure shows up in</p>
+      <select>
+        <option>40-41</option>
+        <option>50-51</option>
+      </select>
+      <select>
+        <option>90-91</option> 
+        <option>100-101</option>
+      </select>
+    </fieldset>  
+    <p>
+      if u dont know how to beat figure 
+      <br>
+      just crouch he wont get you if you were next to him
+    </p>
+    <div class="SeekInfo">
+      <a href="https://doors-game.fandom.com/wiki/figure">figure info</a>
+    </div>
+        <div class="div3" >rush</div>
+    <fieldset>
+      <h1>this is rush</h1>
+      <h3>quiz</h3>
+      <p>how much does rush damage</p>
+      <select>
+        <option>20</option>
+        <option>50</option>
+        <option>70</option> 
+        <option>100</option>
+      </select>
+    </fieldset>  
+    <p>
+      if u dont know how to beat rush
+      <br>
+      just hide in the closet when he flikers
+    </p>
+    <div class="SeekInfo">
+      <a href="https://doors-game.fandom.com/wiki/rush">rush info</a>
+    </div>
+    <div class="div4" >hide</div>
+    <fieldset>
+      <h1>this is hide</h1>
+      <h3>quiz</h3>
+      <p>how does he come</p>
+      <select>
+        <option>getting out early</option>
+        <option>being late</option>
+      </select>
+    </fieldset>  
+    <p>
+      if u dont know how to avoid hide
+      <br>
+      just if you are hidding from rush
+      <br>
+      get out when rush finish 
+      <br>
+      if you are hidding from ambush 
+      <br>
+      he comes and goes so every time 
+      <br>
+      he comes and goes get out and go back
+      <br>
+    </p>
+    <div class="SeekInfo">
+      <a href="https://doors-game.fandom.com/wiki/hide">hide info</a>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8">
+    <title>Doors Wiki</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>   
+      body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(135deg, #f8fafc 0%, #b6e0fe 100%);
+      color: #222;
+      margin: 0;
+      padding: 0;
+      }
+      header {
+      background: linear-gradient(90deg, #4f8cff 0%, #7ee8fa 100%);
+      padding: 24px 0 12px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      }
+      header h1 {
+      margin: 0;
+      font-size: 2.7em;
+      letter-spacing: 2px;
+      color: #fff;
+      text-shadow: 0 2px 8px #4f8cff;
+      }
+      .tools-link, .home-link {
+      display: inline-block;
+      margin: 16px 0 0 0;
+      padding: 8px 22px;
+      background: #fff;
+      color: #4f8cff;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.1em;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+      transition: background 0.2s, color 0.2s;
+      }
+      .tools-link:hover, .home-link:hover {
+      background: #4f8cff;
+      color: #fff;
+      }
+      nav {
+      margin-top: 10px;
+      }
+      nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.2s;
+      }
+      nav a:hover {
+      color: #ffd966;
+      text-decoration: underline;
+      }
+      main {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 24px;
+      background: rgba(255,255,255,0.93);
+      border-radius: 14px;
+      box-shadow: 0 4px 24px rgba(79,140,255,0.13);
+      }
+      .entity {
+      margin-bottom: 48px;
+      padding: 28px;
+      background: linear-gradient(120deg, #e0f7fa 0%, #f1f8ff 100%);
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(79,140,255,0.10);
+      position: relative;
+      transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .entity:hover {
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 6px 24px rgba(79,140,255,0.18);
+      }
+      .entity h2 {
+      margin-top: 0;
+      color: #4f8cff;
+      font-size: 2.1em;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      }
+      .entity .icon {
+      font-size: 1.3em;
+      color: #7ee8fa;
+      }
+      .entity .info-link {
+      margin-top: 14px;
+      display: none;
+      }
+      /* --- Seek custom style --- */
+      #seek {
+      /* Remove custom background, border, and box-shadow to match others */
+      background: linear-gradient(120deg, #e0f7fa 0%, #f1f8ff 100%);
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(79,140,255,0.10);
+      border: none;
+      position: relative;
+      overflow: visible;
+      }
+      #seek h2 {
+      color: #4f8cff;
+      text-shadow: none;
+      }
+      #seek .icon {
+      color: #7ee8fa;
+      text-shadow: none;
+      }
+      #seek fieldset {
+      border-color: #b6e0fe;
+      background: #f8fafc;
+      }
+      #seek .quiz-feedback {
+      color: #4f8cff;
+      }
+      #seek .wiki-info {
+      background: #e0f7fa;
+      color: #222;
+      border-left: 4px solid #4f8cff;
+      }
+      #seek .tips {
+      background: #f1f8ff;
+      color: #4f8cff;
+      border-left: 4px solid #4f8cff;
+      }
+      /* --- End Seek custom style --- */
+      fieldset {
+      border: 1px solid #b6e0fe;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 18px;
+      background: #f8fafc;
+      position: relative;
+      }
+      fieldset h3 {
+      margin-top: 0;
+      color: #4f8cff;
+      }
+      .quiz-feedback {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #4f8cff;
+      min-height: 22px;
+      }
+      select {
+      margin: 8px 0;
+      padding: 7px 14px;
+      border-radius: 7px;
+      border: 1px solid #b6e0fe;
+      background: #e0f7fa;
+      color: #222;
+      font-size: 1em;
+      transition: background 0.2s;
+      }
+      select:focus {
+      background: #b6e0fe;
+      outline: 2px solid #4f8cff;
+      }
+      p {
+      margin: 14px 0;
+      line-height: 1.7;
+      }
+      .tips {
+      background: #f1f8ff;
+      border-left: 4px solid #4f8cff;
+      padding: 10px 18px;
+      border-radius: 7px;
+      margin: 10px 0 0 0;
+      font-size: 1.05em;
+      color: #4f8cff;
+      }
+      .entity-footer {
+      margin-top: 18px;
+      font-size: 0.95em;
+      color: #aaa;
+      }
+      .wiki-info {
+      margin-top: 14px;
+      background: #e0f7fa;
+      border-radius: 7px;
+      padding: 12px 18px;
+      color: #222;
+      font-size: 1.07em;
+      box-shadow: 0 2px 8px rgba(79,140,255,0.07);
+      border-left: 4px solid #4f8cff;
+      }
+      @media (max-width: 700px) {
+      main {
+      padding: 10px;
+      }
+      .entity {
+      padding: 14px;
+      }
+      }
+      @media (max-width: 500px) {
+      header h1 {
+      font-size: 1.5em;
+      }
+      nav a {
+      font-size: 0.95em;
+      margin: 0 8px;
+      }
+      .tools-link, .home-link {
+      padding: 8px 10px;
+      font-size: 0.95em;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><i class="fa-solid fa-door-open"></i> Doors Wiki</h1>
+      <nav>
+        <a href="#seek"><i class="fa-solid fa-person-running"></i> Seek</a>
+        <a href="#figure"><i class="fa-solid fa-user-secret"></i> Figure</a>
+        <a href="#rush"><i class="fa-solid fa-wind"></i> Rush</a>
+        <a href="#hide"><i class="fa-solid fa-eye-slash"></i> Hide</a>
+        <a href="#ambush"><i class="fa-solid fa-skull-crossbones"></i> Ambush</a>
+        <a href="#screech"><i class="fa-solid fa-spider"></i> Screech</a>
+        <a href="#halt"><i class="fa-solid fa-arrows-turn-to-dots"></i> Halt</a>
+      </nav>
+      <p>Your guide to the entities in the game "Doors"</p>
+    </header>
+        <a class="tools-link" href="tools.html"><i class="fa-solid fa-toolbox"></i> Tools Page</a>
+    <main>
+      <section class="entity" id="seek">
+        <h2><span class="icon"><i class="fa-solid fa-person-running"></i></span> Seek</h2>
+        <fieldset>
+          <h3>Quiz</h3>
+          <p>Which door numbers does Seek show up in?</p>
+          <select id="seek-quiz">
+            <option value="">Choose...</option>
+            <option value="20-30">20-30</option>
+            <option value="30-40">30-40</option>
+            <option value="40-50">40-50</option>
+          </select>
+          <div class="quiz-feedback" id="seek-feedback"></div>
+        </fieldset>
+        <div class="wiki-info"></div>
+          <strong>Seek</strong> is a major entity in Doors. It appears in two chase sequences, usually between doors 30-40 and 70-80. When Seek spawns, the player must run through a series of rooms while obstacles block the way. Seek will chase the player and instantly kill them if it catches up. The chase ends when the player reaches a safe room and closes the door behind them.
+        </div>
+        <div class="tips">
+          <i class="fa-solid fa-bolt"></i> If you don't know how to be fast in Seek, drink vitamins!
+        </div>
+      </section>
+      <section class="entity" id="figure">
+        <h2><span class="icon"><i class="fa-solid fa-user-secret"></i></span> Figure</h2>
+        <fieldset>
+          <h3>Quiz</h3>
+          <p>Which door numbers does Figure show up in?</p>
+          <select id="figure-quiz1">
+            <option value="">Choose...</option>
+            <option value="40-41">40-41</option>
+            <option value="50-51">50-51</option>
+          </select>
+          <select id="figure-quiz2">
+            <option value="">Choose...</option>
+            <option value="90-91">90-91</option>
+            <option value="100-101">100-101</option>
+          </select>
+          <div class="quiz-feedback" id="figure-feedback"></div>
+        </fieldset>
+        <div class="wiki-info">
+          <strong>Figure</strong> is a blind entity that appears at doors 50 and 100. It relies on sound to detect players. At door 50, players must collect books and decode a code to unlock the exit, all while avoiding Figure. At door 100, Figure appears again during the final escape sequence. Crouching makes the player silent, allowing them to sneak past Figure.
+        </div>
+        <div class="tips">
+          <i class="fa-solid fa-user-ninja"></i> If you don't know how to beat Figure, just crouch. He won't get you even if you are next to him.
+        </div>
+      </section>
+      <section class="entity" id="rush">
+        <h2><span class="icon"><i class="fa-solid fa-wind"></i></span> Rush</h2>
+        <fieldset>
+          <h3>Quiz</h3>
+          <p>How much damage does Rush do?</p>
+          <select id="rush-quiz">
+            <option value="">Choose...</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="70">70</option>
+            <option value="100">100</option>
+          </select>
+          <div class="quiz-feedback" id="rush-feedback"></div>
+        </fieldset>
+        <div class="wiki-info"></div>
+          <strong>Rush</strong> is a fast-moving entity that travels through rooms, flickering the lights as a warning. When Rush spawns, players must quickly hide in a closet or under a bed. If Rush finds a player in the open, it instantly kills them, dealing up to 100 damage. Rush can appear multiple times in a run.
+        </div>
+        <div class="tips">
+          <i class="fa-solid fa-door-closed"></i> If you don't know how to beat Rush, just hide in the closet when he flickers.
+        </div>
+      </section>
+      <section class="entity" id="hide">
+        <h2><span class="icon"><i class="fa-solid fa-eye-slash"></i></span> Hide</h2>
+        <fieldset>
+          <h3>Quiz</h3>
+          <p>How does Hide come?</p>
+          <select id="hide-quiz">
+            <option value="">Choose...</option>
+            <option value="Getting out early">Getting out early</option>
+            <option value="Being late">Being late</option>
+          </select>
+          <div class="quiz-feedback" id="hide-feedback"></div>
+        </fieldset>
+        <div class="wiki-info"></div>
+          <strong>Hide</strong> is an entity that appears if a player stays in a hiding spot (closet or bed) for too long. Hide will force the player out and deal damage. This mechanic prevents players from camping in hiding spots. Hide is triggered by being late to leave after Rush or Ambush passes.
+        </div>
+        <div class="tips">
+          <i class="fa-solid fa-person-shelter"></i> If you don't know how to avoid Hide:<br>
+          If you are hiding from Rush, get out when Rush finishes.<br>
+          If you are hiding from Ambush, he comes and goes, so every time he comes and goes, get out and go back.
+        </div>
+      </section>
+      <section class="entity" id="ambush">
+        <h2><span class="icon"><i class="fa-solid fa-skull-crossbones"></i></span> Ambush</h2>
+        <fieldset>
+          <h3>Quiz</h3>
+          <p>What is the main difference between Ambush and Rush?</p>
+          <select id="ambush-quiz">
+            <option value="">Choose...</option>
+            <option value="Ambush comes once">Ambush comes once</option>
+            <option value="Ambush comes back and forth">Ambush comes back and forth</option>
+            <option value="Ambush is slower">Ambush is slower</option>
+          </select>
+          <div class="quiz-feedback" id="ambush-feedback"></div>
+        </fieldset>
+        <div class="wiki-info"></div>
+          <strong>Ambush</strong> is similar to Rush but more dangerous. Ambush will travel through the rooms multiple times, forcing players to repeatedly hide and exit hiding spots. If you stay in a hiding spot too long, Hide will force you out, so you must time your hiding carefully.
+        </div>
+        <div class="tips">
+          <i class="fa-solid fa-rotate"></i> Listen for Ambush's sound and be ready to get in and out of hiding spots several times!
+        </div>
+      </section>
+      <section class="entity" id="screech">
+        <h2><span class="icon"><i class="fa-solid fa-spider"></i></span> Screech</h2>
+        <fieldset>
+          <h3>Quiz</h3>
+          <p>How do you avoid Screech's attack?</p>
+          <select id="screech-quiz">
+            <option value="">Choose...</option>
+            <option value="Look at him">Look at him</option>
+            <option value="Run away">Run away</option>
+            <option value="Hide">Hide</option>
+          </select>
+          <div class="quiz-feedback" id="screech-feedback"></div>
+        </fieldset>
+        <div class="wiki-info"></div>
+          <strong>Screech</strong> appears in dark rooms and will make a "psst" sound. If you hear it, look around quickly to find Screech. Staring at Screech will make it disappear and prevent it from attacking you.
+        </div>
+        <div class="tips">
+          <i class="fa-solid fa-eye"></i> Always look around in dark rooms if you hear "psst"!
+        </div>
+      </section>
+      <section class="entity" id="halt">
+        <h2><span class="icon"><i class="fa-solid fa-arrows-turn-to-dots"></i></span> Halt</h2>
+        <fieldset>
+          <h3>Quiz</h3>
+          <p>What should you do when Halt says "Turn Around"?</p>
+          <select id="halt-quiz">
+            <option value="">Choose...</option>
+            <option value="Keep running">Keep running</option>
+            <option value="Turn around and run the other way">Turn around and run the other way</option>
+            <option value="Hide">Hide</option>
+          </select>
+          <div class="quiz-feedback" id="halt-feedback"></div>
+        </fieldset>
+        <div class="wiki-info"></div>
+          <strong>Halt</strong> is an entity that appears in a special event room. The screen will flash "Turn Around" and you must turn your character and run in the opposite direction to avoid Halt's attacks.
+        </div>
+        <div class="tips">
+          <i class="fa-solid fa-arrows-rotate"></i> Always follow the "Turn Around" prompt to survive Halt!
+        </div>
+      </section>
+    </main>
+    <script>
+      // Seek Quiz
+      document.getElementById('seek-quiz').addEventListener('change', function() {
+        const feedback = document.getElementById('seek-feedback');
+        if (this.value === "30-40") {
+          feedback.textContent = "Correct! Seek appears between doors 30-40 and 70-80.";
+          showInfo('seek', true);
+        } else if (this.value) {
+          feedback.textContent = "Try again!";
+          showInfo('seek', false);
+        } else {
+          feedback.textContent = "";
+          showInfo('seek', false);
+        }
+      });
+
+      // Figure Quiz
+      function checkFigureQuiz() {
+        const val1 = document.getElementById('figure-quiz1').value;
+        const val2 = document.getElementById('figure-quiz2').value;
+        const feedback = document.getElementById('figure-feedback');
+        if (val1 === "50-51" && val2 === "100-101") {
+          feedback.textContent = "Correct! Figure appears at doors 50 and 100.";
+          showInfo('figure', true);
+        } else if (val1 || val2) {
+          feedback.textContent = "Try again!";
+          showInfo('figure', false);
+        } else {
+          feedback.textContent = "";
+          showInfo('figure', false);
+        }
+      }
+      document.getElementById('figure-quiz1').addEventListener('change', checkFigureQuiz);
+      document.getElementById('figure-quiz2').addEventListener('change', checkFigureQuiz);
+
+      // Rush Quiz
+      document.getElementById('rush-quiz').addEventListener('change', function() {
+        const feedback = document.getElementById('rush-feedback');
+        if (this.value === "100") {
+          feedback.textContent = "Correct! Rush can deal up to 100 damage.";
+          showInfo('rush', true);
+        } else if (this.value) {
+          feedback.textContent = "Try again!";
+          showInfo('rush', false);
+        } else {
+          feedback.textContent = "";
+          showInfo('rush', false);
+        }
+      });
+
+      // Hide Quiz
+      document.getElementById('hide-quiz').addEventListener('change', function() {
+        const feedback = document.getElementById('hide-feedback');
+        if (this.value === "Being late") {
+          feedback.textContent = "Correct! Hide comes if you stay too long.";
+          showInfo('hide', true);
+        } else if (this.value) {
+          feedback.textContent = "Try again!";
+          showInfo('hide', false);
+        } else {
+          feedback.textContent = "";
+          showInfo('hide', false);
+        }
+      });
+
+      // Ambush Quiz
+      document.getElementById('ambush-quiz').addEventListener('change', function() {
+        const feedback = document.getElementById('ambush-feedback');
+        if (this.value === "Ambush comes back and forth") {
+          feedback.textContent = "Correct! Ambush comes back and forth through the rooms.";
+          showInfo('ambush', true);
+        } else if (this.value) {
+          feedback.textContent = "Try again!";
+          showInfo('ambush', false);
+        } else {
+          feedback.textContent = "";
+          showInfo('ambush', false);
+        }
+      });
+
+      // Screech Quiz
+      document.getElementById('screech-quiz').addEventListener('change', function() {
+        const feedback = document.getElementById('screech-feedback');
+        if (this.value === "Look at him") {
+          feedback.textContent = "Correct! Looking at Screech makes him go away.";
+          showInfo('screech', true);
+        } else if (this.value) {
+          feedback.textContent = "Try again!";
+          showInfo('screech', false);
+        } else {
+          feedback.textContent = "";
+          showInfo('screech', false);
+        }
+      });
+
+      // Halt Quiz
+      document.getElementById('halt-quiz').addEventListener('change', function() {
+        const feedback = document.getElementById('halt-feedback');
+        if (this.value === "Turn around and run the other way") {
+          feedback.textContent = "Correct! Turn around and run the other way to avoid Halt.";
+          showInfo('halt', true);
+        } else if (this.value) {
+          feedback.textContent = "Try again!";
+          showInfo('halt', false);
+        } else {
+          feedback.textContent = "";
+          showInfo('halt', false);
+        }
+      });
+
+      function showInfo(sectionId, show) {
+        const info = document.querySelector(`#${sectionId} .wiki-info`);
+        if (show) {
+          info.style.display = 'block';
+        } else {
+          info.style.display = 'none';
+        }
+      }
+
+      // Hide all info on load
+      document.querySelectorAll('.wiki-info').forEach(el => el.style.display = 'none');
+    </script>
+  </body>
+</html>

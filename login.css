@@ -1,0 +1,33 @@
+body
+{
+  background:url(pain.jpeg)
+}
+p
+{
+  margin-left:200px;
+  font-size:30px;
+  opacity:20%;
+  color:#0FF;
+}
+form
+{
+  text-align:center;
+  margin-left:500px;
+  width:300px;
+}
+input
+{
+  text-align:center;
+}
+legend
+{
+  font-size:50px
+}
+select
+{
+  width:100px
+}
+.number
+{
+  width: 100px;
+}

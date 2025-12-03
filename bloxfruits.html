@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blox Fruits Wiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; }
+        header { background: #222; color: #fff; padding: 20px 0; text-align: center; }
+        nav { background: #333; padding: 10px 0; text-align: center; position: relative; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; transition: color 0.2s; }
+        nav a:hover { color: #ffd700; }
+        .nav-toggle { display: none; position: absolute; right: 20px; top: 12px; font-size: 24px; color: #fff; cursor: pointer; }
+        main { max-width: 900px; margin: 30px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);}
+        h2 { color: #222; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        th { background: #eee; }
+        ul { margin: 10px 0 20px 20px; }
+        .search-bar { margin-bottom: 15px; }
+        .search-bar input { width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
+        .boss-cards { display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0; }
+        .boss-card { background: #fafafa; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); padding: 16px; flex: 1 1 220px; min-width: 220px; text-align: center; }
+        .boss-card img { width: 80px; height: 80px; object-fit: cover; border-radius: 50%; margin-bottom: 10px; background: #eee; }
+        .boss-card strong { display: block; margin-bottom: 6px; font-size: 1.1em; }
+        .boss-card span { color: #555; font-size: 0.95em; }
+        footer { text-align: center; padding: 15px 0; background: #222; color: #fff; margin-top: 40px; }
+        @media (max-width: 700px) {
+            main { padding: 15px; }
+            .boss-cards { flex-direction: column; }
+        }
+        @media (max-width: 500px) {
+            nav a { display: none; }
+            .nav-toggle { display: block; }
+            nav.open a { display: inline-block; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blox Fruits Wiki</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#fruits">Fruits</a>
+        <a href="#weapons">Weapons</a>
+        <a href="#bosses">Bosses</a>
+        <span class="nav-toggle">&#9776;</span>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                <strong>Blox Fruits</strong> is a popular Roblox game inspired by the anime One Piece. Players explore islands, defeat enemies, and collect powerful fruits called "Blox Fruits" that grant unique abilities. Fruits are divided into three main types: <strong>Natural (Paramecia)</strong>, <strong>Elemental (Logia)</strong>, and <strong>Beast (Zoan)</strong>. Each fruit offers different skills and playstyles. Players can also use swords, guns, and fight bosses to become stronger.
+            </p>
+            <ul>
+                <li><strong>Natural (Paramecia):</strong> Fruits that grant various powers, not fitting into Elemental or Beast categories.</li>
+                <li><strong>Elemental (Logia):</strong> Fruits that allow users to control elements and become immune to normal attacks.</li>
+                <li><strong>Beast (Zoan):</strong> Fruits that let users transform into animals or mythical creatures.</li>
+            </ul>
+            <p>
+                Fruits can be bought from the Blox Fruit Dealer, found under trees, or obtained from Gacha. Each fruit has a unique set of abilities and price.
+            </p>
+        </section>
+        <section id="fruits">
+            <h2>Fruits</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Search fruits..." onkeyup="filterTable('fruits-table', this.value)">
+            </div>
+            <table id="fruits-table">
+                <thead>
+                    <tr>
+                        <tr><th>Fruit</th><th>Type</th></tr>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Rocket</td><td>Natural</td></tr>
+                    <tr><td>Spin</td><td>Natural</td></tr>
+                    <tr><td>Chop</td><td>Natural</td></tr>
+                    <tr><td>Spring</td><td>Natural</td></tr>
+                    <tr><td>Bomb</td><td>Natural</td></tr>
+
+                    <tr><td>Smoke</td><td>Elemental</td></tr>
+                    <tr><td>Spike</td><td>Natural</td></tr>
+                    <tr><td>Flame</td><td>Elemental</td></tr>
+                    <tr><td>Ice</td><td>Elemental</td></tr>
+                    <tr><td>Sand</td><td>Elemental</td></tr>
+
+                    <tr><td>Dark</td><td>Elemental</td></tr>
+                    <tr><td>Diamond</td><td>Natural</td></tr>
+                    <tr><td>Light</td><td>Elemental</td></tr>
+                    <tr><td>Rubber</td><td>Natural</td></tr>
+                    <tr><td>Revive (Ghost)</td><td>Natural</td></tr>
+
+                    <tr><td>Magma</td><td>Elemental</td></tr>
+                    <tr><td>Quake</td><td>Natural</td></tr>
+                    <tr><td>Buddha</td><td>Beast</td></tr>
+                    <tr><td>Love</td><td>Natural</td></tr>
+                    <tr><td>Spider</td><td>Natural</td></tr>
+
+                    <tr><td>Sound</td><td>Natural</td></tr>
+                    <tr><td>Phoenix</td><td>Beast</td></tr>
+                    <tr><td>Portal</td><td>Natural</td></tr>
+                    <tr><td>Rumble</td><td>Elemental</td></tr>
+                    <tr><td>Pain (Paw)</td><td>Natural</td></tr>
+
+                    <tr><td>Blizzard</td><td>Elemental</td></tr>
+                    <tr><td>Gravity</td><td>Natural</td></tr>
+                    <tr><td>Mammoth</td><td>Beast</td></tr>
+                    <tr><td>T-Rex</td><td>Beast</td></tr>
+                    <tr><td>Dough</td><td>Elemental</td></tr>
+
+                    <tr><td>Shadow</td><td>Natural</td></tr>
+                    <tr><td>Venom</td><td>Natural</td></tr>
+                    <tr><td>Control</td><td>Natural</td></tr>
+                    <tr><td>Gas</td><td>Elemental</td></tr>
+                    <tr><td>Spirit</td><td>Natural</td></tr>
+
+                    <tr><td>Leopard</td><td>Beast</td></tr>
+                    <tr><td>Yeti</td><td>Beast</td></tr>
+                    <tr><td>Kitsune</td><td>Beast</td></tr>
+                    <tr><td>Dragon</td><td>Beast</td></tr>
+                    <tr><td>Eagle (Falcon)</td><td>Beast</td></tr>
+
+                </tbody>
+                    
+                </tbody>
+            </table>
+        <section id="weapons">
+            <h2>Swords</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Search swords..." onkeyup="filterTable('weapons-table', this.value)">
+            </div>
+            <table id="weapons-table">
+                <thead>
+                    <tr>
+                        <th>Sword Name</th>
+                        <th>Rarity / Sea / Notes / How to Get</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Katana</td><td>Common — available early (Starter Island). Buy from basic Sword Dealer.</td></tr>
+                    <tr><td>Cutlass</td><td>Common — same as Katana (starter).</td></tr>
+                    <tr><td>Dual Katana</td><td>Common — purchased from Sword Dealer (Starter Island) when starting.</td></tr>
+                    <tr><td>Iron Mace</td><td>Uncommon — early / first sea option from sword vendors.</td></tr>
+                    <tr><td>Shark Saw</td><td>Uncommon — one of the early/low-tier swords.</td></tr>
+                    <tr><td>Triple Katana</td><td>Uncommon — early-ish sword; from basic/early dealers.</td></tr>
+                    <tr><td>Twin Hooks</td><td>Uncommon — listed among the lesser swords.</td></tr>
+                    <tr><td>Gravity Blade</td><td>Rare — mid-game sword, available after progressing to higher seas.</td></tr>
+                    <tr><td>Longsword</td><td>Rare — available in mid-sea.</td></tr>
+                    <tr><td>Pipe</td><td>Rare — early-ish rare sword.</td></tr>
+                    <tr><td>Dual-Headed Blade</td><td>Rare — obtainable through sword dealers or similar mid-game.</td></tr>
+                    <tr><td>Soul Cane</td><td>Rare — among the swords you can get before reaching high-tier.</td></tr>
+                    <tr><td>Trident</td><td>Rare — one of the early/rare melee options.</td></tr>
+                    <tr><td>Warden's Sword</td><td>Rare — mid-tier sword in first/second sea era.</td></tr>
+                    <tr><td>Bisento</td><td>Legendary — stronger sword, available later.</td></tr>
+                    <tr><td>Buddy Sword</td><td>Legendary — among powerful swords.</td></tr>
+                    <tr><td>Canvander</td><td>Legendary — a higher-tier sword for advanced players.</td></tr>
+                    <tr><td>Dark Dagger</td><td>Legendary — obtainable later; higher damage tier.</td></tr>
+                    <tr><td>Fox Lamp</td><td>Legendary — strong sword, more advanced.</td></tr>
+                    <tr><td>Koko</td><td>Legendary — available after some progress.</td></tr>
+                    <tr><td>Midnight Blade</td><td>Legendary — stronger, mid-to-late game.</td></tr>
+                    <tr><td>Oroshi</td><td>Legendary — sold by the Legendary Sword Dealer NPC (Second Sea) for 2,000,000 Beli.</td></tr>
+                    <tr><td>Rengoku</td><td>Legendary — higher-tier sword, requires more progression.</td></tr>
+                    <tr><td>Shark Anchor</td><td>Legendary — powerful melee sword, later in the game.</td></tr>
+                    <tr><td>Spikey Trident</td><td>Legendary — high-tier sword for advanced players.</td></tr>
+                    <tr><td>Tushita</td><td>Legendary — strong, late-game sword.</td></tr>
+                    <tr><td>Yama</td><td>Legendary — another late-game melee option.</td></tr>
+                    <tr><td>Saber</td><td>Legendary — accessible early/mid, but good damage.</td></tr>
+                    <tr><td>True Triple Katana (TTK)</td><td>Mythical — buy 3 legendary swords, reach 300 Mastery on each, then buy TTK from Mysterious Man for 2,000,000 Beli.</td></tr>
+                    <tr><td>Cursed Dual Katana (CDK)</td><td>Mythical — one of the top-tier swords.</td></tr>
+                    <tr><td>Dark Blade</td><td>Mythical — game-pass / special sword.</td></tr>
+                    <tr><td>Hallow Scythe</td><td>Mythical — one of the rare late-game swords.</td></tr>
+                    <tr><td>Triple Dark Blade</td><td>Mythical — high-tier sword with special unlock.</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="guns">
+            <h2>Guns</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Search guns..." onkeyup="filterTable('guns-table', this.value)">
+            </div>
+            <table id="guns-table">
+                <thead>
+                    <tr>
+                        <th>Gun Name</th>
+                        <th>Rarity / Notes / How to Get</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Slingshot</td><td>Common — early-game gun. Can be bought from Weapon Dealer NPC in Middle Town (First Sea).</td></tr>
+                    <tr><td>Flintlock</td><td>Uncommon — buy from basic weapon dealers (First Sea).</td></tr>
+                    <tr><td>Musket</td><td>Uncommon — early-game ranged weapon from basic dealers.</td></tr>
+                    <tr><td>Refined Slingshot</td><td>Rare — more advanced version, via Weapon Dealer / Advanced Weapon Dealer in Marine Fortress (First Sea).</td></tr>
+                    <tr><td>Dual Flintlock</td><td>Rare — purchased in First Sea from Advanced Weapon Dealer.</td></tr>
+                    <tr><td>Cannon</td><td>Rare — bought via Advanced Weapon Dealer in Marine Fortress (First Sea).</td></tr>
+                    <tr><td>Magma Blaster</td><td>Rare — obtained by defeating Magma Admiral boss in Magma Village (First Sea).</td></tr>
+                    <tr><td>Bazooka</td><td>Legendary — drop from Wysper boss in Upper Skylands (First Sea / early-mid).</td></tr>
+                    <tr><td>Acidum Rifle</td><td>Rare — in Second Sea: obtained by destroying the Factory's Core during a Factory Raid.</td></tr>
+                    <tr><td>Bizarre Revolver</td><td>Rare — obtained from NPC (for example, "El Rodolfo" in the Cursed Ship, with Ectoplasm cost) in Second Sea.</td></tr>
+                    <tr><td>Kabucha</td><td>Legendary — purchase from "The Strongest God" NPC in Remote Island (Second Sea), costing fragments.</td></tr>
+                    <tr><td>Venom Bow</td><td>Legendary — one of the top-tier ranged weapons in Third Sea.</td></tr>
+                    <tr><td>Dragonstorm</td><td>Legendary / Mythical — rare top-tier gun; strong for PvP and ranged attacks.</td></tr>
+                    <tr><td>Skull Guitar</td><td>Mythical — highest-tier gun, obtained via puzzle or special crafting (in some versions), very rare.</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="bosses">
+            <h2>Bosses</h2>
+            <table id="bosses-table">
+                <thead>
+                    <tr>
+                        <th>bosses</th>
+                        <th>Level / Notes</th>
+                        <th>Possible / Known Drops / Rewards</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>The Saw</td><td>Lv 100</td><td>Shark Saw — ≈ 10% chance</td></tr>
+                    <tr><td>Yeti</td><td>Lv 110</td><td>Yeti Fur (an accessory)</td></tr>
+                    <tr><td>Vice Admiral</td><td>Lv 130</td><td>Vice Admiral's Coat — ≈ 10% chance</td></tr>
+                    <tr><td>Saber Expert</td><td>Lv 200</td><td>Saber — guaranteed drop V1</td></tr>
+                    <tr><td>Chief Warden</td><td>Lv 230</td><td>Warden's Sword — ~5-10% chance</td></tr>
+                    <tr><td>Swan</td><td>Lv 225 (Prison-area)</td><td>Pink Coat — ~2.5-5% chance</td></tr>
+                    <tr><td>Magma Admiral</td><td>Lv 350</td><td>Refined Musket — ~10% chance</td></tr>
+                    <tr><td>Fishman Lord</td><td>Lv 425</td><td>Trident — ~10% chance</td></tr>
+                    <tr><td>Wysper</td><td>Lv 500 (Upper Skylands)</td><td>Bazooka — ~5% chance</td></tr>
+                    <tr><td>Thunder God</td><td>Lv 575</td><td>Pole (1st Form) — ~5% chance</td></tr>
+                    <tr><td>Cyborg</td><td>Lv 675 (Fountain City)</td><td>Cool Shades (accessory) — ~1-2% chance</td></tr>
+                    <tr><td>Diamond</td><td>Lv 750 (Flower Hill / Kingdom of Rose)</td><td>Longsword — ~10% chance</td></tr>
+                    <tr><td>Jeremy</td><td>Lv 850 (Kingdom of Rose)</td><td>Black Spikey Coat (accessory) — ~5-10% chance</td></tr>
+                    <tr><td>Fajita</td><td>Lv 925 (Green Zone)</td><td>Gravity Cane (or Gravity-type sword) — ~10% chance</td></tr>
+                    <tr><td>Don Swan</td><td>Lv 1000 (Mansion / Kingdom of Rose)</td><td>Swan Glasses (accessory) — ~2.5–5% chance; also guaranteed Swan Ship / related drop</td></tr>
+                    <tr><td>Smoke Admiral</td><td>Lv 1150 (Hot & Cold Island)</td><td>Jitte — ~15% chance</td></tr>
+                    <tr><td>Awakened Ice Admiral</td><td>Lv 1400 (Ice Castle)</td><td>Hidden Key (~2.5% chance), Library Key (~15%) — keys give access to special unlocks or chests.</td></tr>
+                    <tr><td>Tide Keeper</td><td>Lv 1475 (Forgotten Island)</td><td>Dragon Trident — ~7.5% chance; also Water Key — ~40% chance</td></tr>
+                    <tr><td>Stone</td><td>Lv 1550 (Port Town)</td><td>Pilot Helmet — ~5-10% chance</td></tr>
+                    <tr><td>Island Empress</td><td>Lv 1675 (Hydra Island)</td><td>Serpent Bow — ~10% chance</td></tr>
+                    <tr><td>Kilo Admiral</td><td>Lv 1750 (Great Tree)</td><td>Lei (accessory) — ~5–10% chance</td></tr>
+                    <tr><td>Captain Elephant</td><td>Lv 1875 (Floating Turtle)</td><td>Twin Hooks — possible drop</td></tr>
+                    <tr><td>Beautiful Pirate</td><td>Lv 1950 (Floating Turtle / Hydra–area)</td><td>Canvander — drop chance (rare)</td></tr>
+                    <tr><td>Longma</td><td>Lv 2000 (Floating Turtle / Castle-on-Sea)</td><td>Tushita — guaranteed drop</td></tr>
+                    <tr><td>Cake Queen</td><td>Lv 2175 (Sea of Treats / Ice-Cream Island)</td><td>Buddy Sword — ~5% chance</td></tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th>Raid bosses</th>
+                        <th>Level / Notes</th>
+                        <th>Possible / Known Drops / Rewards</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Soul Reaper *(Raid-boss, Haunted Castle)*</td><td>Lv 2100</td><td>Holy Crown — guaranteed; Hallow Scythe — ~5% chance</td></tr>
+                    <tr><td>Cake Prince *(Raid-type)*</td><td>Lv 2300 (Dimensional Shift / Cake Land)</td><td>Pale Scarf — guaranteed; Spikey Trident — ~5–10%</td></tr>
+                    <tr><td>Dough King *(Raid-type)*</td><td>Lv 2300 (Dimensional Shift / Cake Land)</td><td>Pale Scarf — guaranteed; Spikey Trident — ~10–15%</td></tr>
+                    <tr><td>Tyrant of the Skies *(Raid-boss)*</td><td>Lv 2600 (Tiki Outpost / Tiki-spawn)</td><td>money, random fragments, “Moonstone”, “Fire Feather”, possible physical fruit or skins — high-end raid loot</td></tr>
+                </tbody>
+            </table>
+
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Blox Fruits Wiki. Not affiliated with Roblox or Blox Fruits.
+        <br>
+        <a href="home.html">come back to home</a>
+    </footer>
+    <script>
+        // Responsive nav toggle
+        document.querySelector('.nav-toggle').onclick = function() {
+            document.querySelector('nav').classList.toggle('open');
+        };
+
+        // Table search filter
+        function filterTable(tableId, query) {
+            query = query.toLowerCase();
+            const rows = document.querySelectorAll(`#${tableId} tbody tr`);
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(query) ? '' : 'none';
+            }); 
+        }
+    </script>
+</body>
+</html>

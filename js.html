@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Javascript</title>
+    <style>
+      *
+      {
+        box-sizing: border-box;
+        border-radius: 6px;
+        border: 0px;
+      }
+      body
+      {
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        height: 100vb;
+      }
+      .form
+      {
+        background-color: #eee;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 50px;
+        height: 120px;
+        width: 1400px;
+      }
+      .add
+      {
+        width:140px;
+        height: 80px;
+        font-size: 30px;
+        background-color: #ff5333;
+        color: #fff;
+      }
+      .input
+      {
+        width:1000px;
+        height:75px;
+        margin-right: 20px;
+        font-size: 30px;
+      }
+      .tasks
+      {
+        background-color: #eee;
+        width: 1400px;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <input type="text" class="input">
+        <input type="submit" class="add" value="add task">
+      </div>
+      <div class="tasks"></div>
+    </div>
+    <script>
+      let addtasks = document.getElementsByClassName("add");
+      let text = document.getElementsByClassName("input");
+      let tasks = document.getElementsByClassName("tasks");
+
+      addtasks.onclick = function(){
+        let newtask = document.createElement("div");
+        let newtasktext = text;
+        div.classlist.add("task");
+        let task = newtasktext;  
+        div.style.csstext="\
+        background: white";
+        tasks.append(newtask)
+      }
+
+    </script>
+  </body>
+</html>

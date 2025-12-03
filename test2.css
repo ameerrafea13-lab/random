@@ -1,0 +1,80 @@
+body
+{
+  background:lightcoral;
+}
+
+fieldset
+{
+  border-radius: 6px;
+}
+
+.div1
+{
+  background:url(seek.png);
+  width:300px;
+  margin-left:471px;
+  border:5px solid #000;
+  font-weight:bold;
+  text-align:center;
+  height:400px;
+  color:gray;
+}
+.div2
+{
+  background:url(figure.jpeg);
+  width:300px;
+  margin-left:471px;
+  border:5px solid #000;
+  font-weight:bold;
+  text-align:center;
+  height:400px;
+  color:gray;
+}
+.div3
+{
+  background:url(rush.jpeg);
+  width:300px;
+  margin-left:471px;
+  border:5px solid #000;
+  font-weight:bold;
+  text-align:center;
+  height:300px;
+  color:gray;
+}
+.div4
+{
+  background:url(hide.jpeg);
+  background-repeat:no-repeat;
+  width:300px;
+  margin-left:471px;
+  border:5px solid #000;
+  font-weight:bold;
+  text-align:center;
+  height:345px;
+  color:gray;
+}
+fieldset
+{
+  background:beige;
+  width:282px;
+  text-align:center;
+  margin-left:38%;
+}
+
+fieldset p
+{
+  text-align:center;
+  border:0px;
+}
+
+body p
+{
+  text-align:center;
+  color:#f00;
+
+}
+
+.SeekInfo
+{
+  text-align:center
+}

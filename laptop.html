@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard and Laptop</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            gap: 50px;
+        }
+
+        .laptop {
+            background: #222;
+            width: 300px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .screen {
+            background: #1a1a1a;
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0f0;
+            font-size: 14px;
+            border: 2px solid #444;
+        }
+
+        .keyboard {
+            background: #333;
+            width: 100%;
+            height: 80px;
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 3px;
+            padding: 8px;
+            margin-top: 8px;
+        }
+
+        .key {
+            background: #555;
+            border: 1px solid #777;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+
+        .key:hover {
+            background: #777;
+            transform: scale(0.95);
+        }
+
+        .standalone-keyboard {
+            background: #222;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .keys-grid {
+            display: grid;
+            grid-template-columns: repeat(13, 1fr);
+            gap: 5px;
+        }
+
+        .key-large {
+            background: #444;
+            border: 1px solid #666;
+            border-radius: 4px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.1s;
+            color: #fff;
+            font-size: 12px;
+        }
+
+        .key-large:hover {
+            background: #666;
+            transform: translateY(-2px);
+        }
+
+        .spacebar {
+            grid-column: span 6;
+            background: #444;
+            border: 1px solid #666;
+            border-radius: 4px;
+            padding: 10px;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+
+        .spacebar:hover {
+            background: #666;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="laptop">
+            <h2>Laptop</h2>
+            <div class="screen">Screen Display</div>
+            <div class="keyboard">
+                <div class="key">Q</div>
+                <div class="key">W</div>
+                <div class="key">E</div>
+                <div class="key">R</div>
+                <div class="key">T</div>
+                <div class="key">Y</div>
+                <div class="key">U</div>
+                <div class="key">I</div>
+                <div class="key">O</div>
+                <div class="key">P</div>
+            </div>
+        </div>
+
+        <div class="standalone-keyboard">
+            <h2>External Keyboard</h2>
+            <div class="keys-grid">
+                <div class="key-large">Esc</div>
+                <div class="key-large">1</div>
+                <div class="key-large">2</div>
+                <div class="key-large">3</div>
+                <div class="key-large">4</div>
+                <div class="key-large">5</div>
+                <div class="key-large">6</div>
+                <div class="key-large">7</div>
+                <div class="key-large">8</div>
+                <div class="key-large">9</div>
+                <div class="key-large">0</div>
+                <div class="key-large">-</div>
+                <div class="key-large">=</div>
+                <div class="key-large">Q</div>
+                <div class="key-large">W</div>
+                <div class="key-large">E</div>
+                <div class="key-large">R</div>
+                <div class="key-large">T</div>
+                <div class="key-large">Y</div>
+                <div class="key-large">U</div>
+                <div class="key-large">I</div>
+                <div class="key-large">O</div>
+                <div class="key-large">P</div>
+                <div class="key-large">[</div>
+                <div class="key-large">]</div>
+                <div class="spacebar">Space</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const screen = document.querySelector('.screen');
+        const laptopKeys = document.querySelectorAll('.laptop .key');
+        const externalKeys = document.querySelectorAll('.key-large, .spacebar');
+
+        let displayText = '';
+
+        function updateScreen() {
+            screen.textContent = displayText || 'Screen Display';
+        }
+
+        laptopKeys.forEach(key => {
+            key.addEventListener('click', () => {
+                displayText += key.textContent;
+                updateScreen();
+            });
+        });
+
+        externalKeys.forEach(key => {
+            key.addEventListener('click', () => {
+                const text = key.textContent.trim();
+                if (text === 'Esc') {
+                    displayText = '';
+                } else if (text === 'Space') {
+                    displayText += ' ';
+                } else {
+                    displayText += text;
+                }
+                updateScreen();
+            });
+        });
+    </script>
+</body>
+</html>
